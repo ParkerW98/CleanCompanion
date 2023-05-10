@@ -32,11 +32,7 @@ nav {
     color: #EDF5E1;
 }
 
-.nav-link.active {
-    color: #8EE4AF !important;
-}
-
-.nav-link:hover {
+.nav-link.active:hover {
     color: #8EE4AF !important;
 }
 
@@ -132,8 +128,4 @@ nav {
 
 .navbar-brand {
     color: #EDF5E1;
-}
-
-.navbar-brand:hover {
-    color: white;
 }

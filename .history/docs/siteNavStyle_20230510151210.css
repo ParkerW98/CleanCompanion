@@ -27,17 +27,10 @@ nav {
     color: #EDF5E1;
 }
 
-.nav-link {
+.nav-link,
+.nav-link active {
     font-weight: 800;
     color: #EDF5E1;
-}
-
-.nav-link.active {
-    color: #8EE4AF !important;
-}
-
-.nav-link:hover {
-    color: #8EE4AF !important;
 }
 
 @media (max-width: 767px) {
@@ -132,8 +125,4 @@ nav {
 
 .navbar-brand {
     color: #EDF5E1;
-}
-
-.navbar-brand:hover {
-    color: white;
 }

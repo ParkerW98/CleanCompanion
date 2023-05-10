@@ -36,10 +36,6 @@ nav {
     color: #8EE4AF !important;
 }
 
-.nav-link:hover {
-    color: #8EE4AF !important;
-}
-
 @media (max-width: 767px) {
     .nav-link {
         font-size: small;
@@ -132,8 +128,4 @@ nav {
 
 .navbar-brand {
     color: #EDF5E1;
-}
-
-.navbar-brand:hover {
-    color: white;
 }

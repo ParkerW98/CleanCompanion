@@ -21,23 +21,12 @@
 /* style for the navigation */
 
 nav {
-    background-color: #05386B;
     box-shadow: 0 2px 4px 0 gray;
     margin-bottom: 0;
-    color: #EDF5E1;
 }
 
 .nav-link {
     font-weight: 800;
-    color: #EDF5E1;
-}
-
-.nav-link.active {
-    color: #8EE4AF !important;
-}
-
-.nav-link:hover {
-    color: #8EE4AF !important;
 }
 
 @media (max-width: 767px) {
@@ -127,13 +116,9 @@ nav {
 /* color of three lines */
 
 .navbar-toggler.collapsed .toggler-icon {
-    background-color: #EDF5E1;
+    background: linear-gradient(90deg, rgb(90, 90, 90) 45%, rgba(2555,255,255,1) 100%);
 }
 
 .navbar-brand {
-    color: #EDF5E1;
-}
-
-.navbar-brand:hover {
-    color: white;
+    color: black;
 }
