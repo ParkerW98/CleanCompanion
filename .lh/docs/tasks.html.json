@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1684797865196,
@@ -20,6 +20,10 @@
                 {
                     "date": 1684799182123,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,10 @@\n             <label for=\"taskDescription\">Task Description</label>\r\n             <input type=\"text\" class=\"form-control\" id=\"taskDescription\" placeholder=\"Enter Task Description\">\r\n             <label for=\"taskCompleteDate\">Complete By Date</label>\r\n             <input type=\"date\" class=\"form-control\" id=\"fromDate\" name=\"from-date\">\r\n+            <label for=\"taskCompleteTime\">Complete By Time</label>\r\n+            <input type=\"time\" class=\"form-control\" id=\"fromDate\" name=\"from-date\">\r\n         </form>\r\n     </div>\r\n </main>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1684799363650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,11 +79,11 @@\n             <input type=\"text\" class=\"form-control\" id=\"taskName\" placeholder=\"Enter Task Name\">\r\n             <label for=\"taskDescription\">Task Description</label>\r\n             <input type=\"text\" class=\"form-control\" id=\"taskDescription\" placeholder=\"Enter Task Description\">\r\n             <label for=\"taskCompleteDate\">Complete By Date</label>\r\n-            <input type=\"date\" class=\"form-control\" id=\"fromDate\" name=\"from-date\">\r\n+            <input type=\"date\" class=\"form-control\" id=\"CompleteDate\" name=\"CompleteDate\">\r\n             <label for=\"taskCompleteTime\">Complete By Time</label>\r\n-            <input type=\"time\" class=\"form-control\" id=\"fromDate\" name=\"from-date\">\r\n+            <input type=\"time\" class=\"form-control\" id=\"CompleteTime\" name=\"CompleteTime\">\r\n         </form>\r\n     </div>\r\n </main>\r\n </body>\r\n"
                 }
             ],
             "date": 1684797865196,
