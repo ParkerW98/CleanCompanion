@@ -20,25 +20,18 @@
 
 /* style for the navigation */
 
-nav {
-    position: sticky;
+nav,
+nav a {
     background-color: #05386B;
     box-shadow: 0 2px 4px 0 gray;
     margin-bottom: 0;
     color: #EDF5E1;
 }
 
-.nav-link {
+.nav-link,
+.nav-link:active {
     font-weight: 800;
     color: #EDF5E1;
-}
-
-.nav-link.active {
-    color: #8EE4AF !important;
-}
-
-.nav-link:hover {
-    color: #8EE4AF !important;
 }
 
 @media (max-width: 767px) {
@@ -133,8 +126,4 @@ nav {
 
 .navbar-brand {
     color: #EDF5E1;
-}
-
-.navbar-brand:hover {
-    color: white;
 }
