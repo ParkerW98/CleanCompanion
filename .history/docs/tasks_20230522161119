@@ -27,7 +27,7 @@
     crossorigin="anonymous">
     </script>
 <!-- Page title *Update on each page -->
-    <title>Clean Companion - Home Page </title>
+    <title>Clean Companion - Tasks Page </title>
 </head>
 <body class="d-flex flex-column min-vh-100">
 <header>
@@ -53,7 +53,7 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tasks.html">Tasks</a>
+                        <a class="nav-link" href="task.html">Tasks</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Environment</a>

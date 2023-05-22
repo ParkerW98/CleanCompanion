@@ -27,7 +27,7 @@
     crossorigin="anonymous">
     </script>
 <!-- Page title *Update on each page -->
-    <title>Clean Companion - Home Page </title>
+    <title>Clean Companion - Tasks Page </title>
 </head>
 <body class="d-flex flex-column min-vh-100">
 <header>
