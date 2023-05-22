@@ -39,5 +39,68 @@
     <!-- Page title *Update on each page -->
     <title>Clean Companion - Home Page</title>
   </head>
-  <body></body>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <!-- Responsive nav bar -->
+      <!-- MAKE STICKY -->
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./assets/logo.png"
+              alt="Logo - Two C's back to back with the words Clean Companion below them"
+              width="80px"
+              height="80px"
+              style="margin-right: 10px"
+            />
+            Clean Companion
+          </a>
+          <button
+            class="navbar-toggler collapsed d-flex d-sm-none flex-column justify-content-around"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar1"
+            aria-controls="navbar1"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <!-- Changed Nav Bar from Task to Space -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Space</a>
+              </li>
+              <!-- Changed Environment to Task -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Task</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="userSign-In.html">Sign-In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign-Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner shown across the top of the page below nav -->
+    <div class="banner container-fluid">
+      <img src="./assets/banner.png" alt="" class="img-fluid" />
+    </div>
+    <!-- Main Content -->
+    <main></main>
+  </body>
+  <!-- Site Footer -->
+  <footer class="mt-auto footer"></footer>
 </html>
