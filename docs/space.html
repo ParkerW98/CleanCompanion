@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -22,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="siteNavStyle.css" />
     <!-- CSS Styling - Index -->
     <link rel="stylesheet" type="text/css" href="indexStyle.css" />
+    <link rel="stylesheet" type="text/css" href="userSign-In.css" />
     <!-- Site Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,7 +42,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Page title *Update on each page -->
-    <title>Clean Companion - Home Page</title>
+    <title>Clean Companion - Space</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
@@ -83,7 +89,7 @@
                 <a class="nav-link" href="task.html">Task</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link" href="login.html">Sign-In</a>
               </li>
             </ul>
           </div>
@@ -95,7 +101,38 @@
       <img src="./assets/banner.png" alt="" class="img-fluid" />
     </div>
     <!-- Main Content -->
-    <main></main>
+    <main>
+      <div class="container">
+        <h1>Create a Space</h1>
+        <form>
+          <div class="form-group">
+            <label for="spaceName">Space:</label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="spaceName"
+              name="spaceName"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="creator">Creator:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="creator"
+              name="creator"
+              required
+            />
+          </div>
+          <br />
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    </main>
   </body>
   <!-- Site Footer -->
   <footer class="mt-auto footer"></footer>
