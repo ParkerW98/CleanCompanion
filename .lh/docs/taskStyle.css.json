@@ -1,0 +1,42 @@
+{
+    "sourceFile": "docs/taskStyle.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1684800529656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684800656717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n h3 {\r\n-    content: center;\r\n+    text-align: center;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684800721260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,7 @@\n h3 {\r\n     text-align: center;\r\n+}\r\n+\r\n+label {\r\n+    color: #05386B;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684800756550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n h3 {\r\n     text-align: center;\r\n+    color: #05386B;\r\n }\r\n \r\n label {\r\n     color: #05386B;\r\n"
+                },
+                {
+                    "date": 1684800787977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n }\r\n \r\n label {\r\n     color: #05386B;\r\n+    font-weight: bolder;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684800805085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n h3 {\r\n     text-align: center;\r\n     color: #05386B;\r\n+    font-weight: bolder;\r\n }\r\n \r\n label {\r\n     color: #05386B;\r\n"
+                },
+                {
+                    "date": 1684874913821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,21 @@\n \r\n label {\r\n     color: #05386B;\r\n     font-weight: bolder;\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+ol {\r\n+    counter-reset: item;\r\n+    list-style: none;\r\n+    padding: 0;\r\n+  }\r\n+  li {\r\n+    display: flex;\r\n+  }\r\n+  li:before {\r\n+    content: counters(item, \".\") \" \";\r\n+    counter-increment: item;\r\n+    display: flex;\r\n+    align-items: end;\r\n+    padding-right: 8px;\r\n+  }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1684800529656,
+            "name": "Commit-0",
+            "content": "h3 {\r\n    content: center;\r\n}"
+        }
+    ]
+}

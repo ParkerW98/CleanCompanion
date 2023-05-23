@@ -1,0 +1,30 @@
+{
+    "sourceFile": "docs/task.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1684874071512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684874958741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,11 @@\n       </li>\r\n    `\r\n \r\n $('#taskForms').on('click', '.addSubtask', function(){\r\n-    $(this).closest('form').find('ol').append($(subtaskHTML))\r\n+  $(this).closest('form').find('ol').append($(subtaskHTML))\r\n });\r\n \r\n+\r\n $('#taskForms').on('click', '.prependSubtask', function(){\r\n-    $(this).parent().before($(subtaskHTML))\r\n-});\r\n-\r\n+  $(this).parent().before($(subtaskHTML))\r\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684875443216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n var count = 0;\r\n-$('.addTask').click(function() {\r\n+jQuery('.addTask').click(function() {\r\n   count += 1;\r\n    $('#taskForms').append($(`\r\n       <li>\r\n         <form>\r\n"
+                },
+                {
+                    "date": 1684875548753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n var count = 0;\r\n-jQuery('.addTask').click(function() {\r\n+$('.addTask').click(function() {\r\n   count += 1;\r\n    $('#taskForms').append($(`\r\n       <li>\r\n         <form>\r\n"
+                }
+            ],
+            "date": 1684874071512,
+            "name": "Commit-0",
+            "content": "var count = 0;\r\n$('.addTask').click(function() {\r\n  count += 1;\r\n   $('#taskForms').append($(`\r\n      <li>\r\n        <form>\r\n          <ol class=\"subtasks\"></ol>\r\n          <div>\r\n            <input placeholder='this is a main task'/>\r\n            <button class=\"addSubtask\" type='button'>Add subtask</button>\r\n          </div>\r\n        </form>\r\n      </li>\r\n   `))\r\n});\r\n\r\nconst subtaskHTML =`\r\n      <li>\r\n        <input placeholder='this is a subtask task'/>\r\n        <button class=\"prependSubtask\" type='button'>Add subtask</button>\r\n      </li>\r\n   `\r\n\r\n$('#taskForms').on('click', '.addSubtask', function(){\r\n    $(this).closest('form').find('ol').append($(subtaskHTML))\r\n});\r\n\r\n$('#taskForms').on('click', '.prependSubtask', function(){\r\n    $(this).parent().before($(subtaskHTML))\r\n});\r\n\r\n"
+        }
+    ]
+}

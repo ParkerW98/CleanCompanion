@@ -22,10 +22,10 @@ const subtaskHTML =`
    `
 
 $('#taskForms').on('click', '.addSubtask', function(){
-  $(this).closest('form').find('ol').append($(subtaskHTML))
+    $(this).closest('form').find('ol').append($(subtaskHTML))
 });
-
 
 $('#taskForms').on('click', '.prependSubtask', function(){
-  $(this).parent().before($(subtaskHTML))
+    $(this).parent().before($(subtaskHTML))
 });
+

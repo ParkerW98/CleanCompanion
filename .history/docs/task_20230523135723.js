@@ -1,5 +1,5 @@
 var count = 0;
-$('.addTask').click(function() {
+jQuery('.addTask').click(function() {
   count += 1;
    $('#taskForms').append($(`
       <li>
