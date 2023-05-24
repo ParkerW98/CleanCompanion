@@ -1,31 +1,48 @@
 var count = 0;
-$('.addTask').click(function() {
+$(".addTask").click(function () {
   count += 1;
-   $('#taskForms').append($(`
+  // added using counter to give each <ol> an ID
+  // added delete task button
+  $("#taskForms").append(
+    $(
+      `
       <li>
         <form>
-          <ol class="subtasks"></ol>
+          <ol class="subtasks" id="subtasks` +
+        count +
+        `"></ol>
           <div>
             <input placeholder='this is a main task'/>
             <button class="addSubtask" type='button'>Add subtask</button>
+            <button class="deleteMe" type="button">Delete</button>
           </div>
         </form>
       </li>
-   `))
+   `
+    )
+  );
 });
 
-const subtaskHTML =`
+// added delete subtask buttoon
+const subtaskHTML = `
       <li>
         <input placeholder='this is a subtask task'/>
         <button class="prependSubtask" type='button'>Add subtask</button>
+        <button class="deleteMe" type="button">Delete</button>
       </li>
-   `
+   `;
 
-$('#taskForms').on('click', '.addSubtask', function(){
-  $(this).closest('form').find('ol').append($(subtaskHTML))
+$("#taskForms").on("click", ".addSubtask", function () {
+  // $(this).closest("form").find("ol").append($(subtaskHTML));
+  // the above adds to the wrong place, changed it to the following
+  $(this).parent().after($(subtaskHTML));
 });
 
+$("#taskForms").on("click", ".prependSubtask", function () {
+  $(this).parent().after($(subtaskHTML));
+});
 
-$('#taskForms').on('click', '.prependSubtask', function(){
-  $(this).parent().before($(subtaskHTML))
+// added delete action for tasks and subtasks
+$("#taskForms").on("click", ".deleteMe", function () {
+  $(this).closest("li").remove();
 });
