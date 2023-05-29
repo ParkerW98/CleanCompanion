@@ -24,16 +24,3 @@ ol {
     align-items: end;
     padding-right: 8px;
   }
-
-  .task-name {
-    color: #05386B;
-  }
-  .task-description {
-    color: #05386B;
-  }
-  .complete-date {
-    color: #05386B;
-  }
-  .complete-time {
-    color: #05386B;
-  }

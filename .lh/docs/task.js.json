@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1684874071512,
@@ -20,6 +20,18 @@
                 {
                     "date": 1684875548753,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n var count = 0;\r\n-jQuery('.addTask').click(function() {\r\n+$('.addTask').click(function() {\r\n   count += 1;\r\n    $('#taskForms').append($(`\r\n       <li>\r\n         <form>\r\n"
+                },
+                {
+                    "date": 1685371163995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,31 +1,48 @@\n var count = 0;\r\n-$('.addTask').click(function() {\r\n+$(\".addTask\").click(function () {\r\n   count += 1;\r\n-   $('#taskForms').append($(`\r\n+  // added using counter to give each <ol> an ID\r\n+  // added delete task button\r\n+  $(\"#taskForms\").append(\r\n+    $(\r\n+      `\r\n       <li>\r\n         <form>\r\n-          <ol class=\"subtasks\"></ol>\r\n+          <ol class=\"subtasks\" id=\"subtasks` +\r\n+        count +\r\n+        `\"></ol>\r\n           <div>\r\n             <input placeholder='this is a main task'/>\r\n             <button class=\"addSubtask\" type='button'>Add subtask</button>\r\n+            <button class=\"deleteMe\" type=\"button\">Delete</button>\r\n           </div>\r\n         </form>\r\n       </li>\r\n-   `))\r\n+   `\r\n+    )\r\n+  );\r\n });\r\n \r\n-const subtaskHTML =`\r\n+// added delete subtask buttoon\r\n\\ No newline at end of file\n+const subtaskHTML = `\r\n       <li>\r\n         <input placeholder='this is a subtask task'/>\r\n         <button class=\"prependSubtask\" type='button'>Add subtask</button>\r\n+        <button class=\"deleteMe\" type=\"button\">Delete</button>\r\n       </li>\r\n-   `\r\n+   `;\r\n \r\n-$('#taskForms').on('click', '.addSubtask', function(){\r\n-  $(this).closest('form').find('ol').append($(subtaskHTML))\r\n+$(\"#taskForms\").on(\"click\", \".addSubtask\", function () {\r\n+  // $(this).closest(\"form\").find(\"ol\").append($(subtaskHTML));\r\n+  // the above adds to the wrong place, changed it to the following\r\n+  $(this).parent().after($(subtaskHTML));\r\n });\r\n \r\n+$(\"#taskForms\").on(\"click\", \".prependSubtask\", function () {\r\n+  $(this).parent().after($(subtaskHTML));\r\n+});\r\n \r\n-$('#taskForms').on('click', '.prependSubtask', function(){\r\n-  $(this).parent().before($(subtaskHTML))\r\n-});\n+// added delete action for tasks and subtasks\r\n+$(\"#taskForms\").on(\"click\", \".deleteMe\", function () {\r\n+  $(this).closest(\"li\").remove();\r\n+});\r\n"
+                },
+                {
+                    "date": 1685372549101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,5 +44,27 @@\n \r\n // added delete action for tasks and subtasks\r\n $(\"#taskForms\").on(\"click\", \".deleteMe\", function () {\r\n   $(this).closest(\"li\").remove();\r\n-});\n\\ No newline at end of file\n+});\r\n+\r\n+$(\"form\").submit(function(event) {\r\n+  event.preventDefault();\r\n+\r\n+  var taskName =$(\"#taskName\").val();\r\n+  var taskDescription = $(\"#taskDescription\").val();\r\n+  var taskCompleteDate = $(\"#taskCompleteDate\").val();\r\n+  var taskCompleteTime = $(\"#taskCompleteDate\").val();\r\n+\r\n+  var container = $(\"<div>\").addClass(\"container mt-3\");\r\n+\r\n+  var taskNameText = $(\"<h4>\").text(\"Task Name: \" + taskName);\r\n+  var taskDescriptionText = $(\"<p>\").text(\"Description: \" + taskDescription);\r\n+  var completeDateText = $(\"<p>\").text(\"Complete By Date: \" + taskCompleteDate);\r\n+  var completeTimeText = $(\"<p>\").text(\"Complete By Time: \" + taskCompleteTime);\r\n+\r\n+  container.append(taskNameText, taskDescriptionText, completeDateText, completeTimeText);\r\n+\r\n+  $(\"#mainContent\").append(container);\r\n+\r\n+  $(this)[0].reset();\r\n+});\r\n"
+                },
+                {
+                    "date": 1685372880288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,12 +56,12 @@\n   var taskCompleteTime = $(\"#taskCompleteDate\").val();\r\n \r\n   var container = $(\"<div>\").addClass(\"container mt-3\");\r\n \r\n-  var taskNameText = $(\"<h4>\").text(\"Task Name: \" + taskName);\r\n-  var taskDescriptionText = $(\"<p>\").text(\"Description: \" + taskDescription);\r\n-  var completeDateText = $(\"<p>\").text(\"Complete By Date: \" + taskCompleteDate);\r\n-  var completeTimeText = $(\"<p>\").text(\"Complete By Time: \" + taskCompleteTime);\r\n+  var taskNameText = $(\"<h4>\").text(\"Task Name: \" + taskName).addClass(\"task-name\");\r\n+  var taskDescriptionText = $(\"<p>\").text(\"Description: \" + taskDescription).addClass(\"task-description\");\r\n+  var completeDateText = $(\"<p>\").text(\"Complete By Date: \" + taskCompleteDate).addClass(\"complete-date\");\r\n+  var completeTimeText = $(\"<p>\").text(\"Complete By Time: \" + taskCompleteTime).addClass(\"complete-time\");\r\n \r\n   container.append(taskNameText, taskDescriptionText, completeDateText, completeTimeText);\r\n \r\n   $(\"#mainContent\").append(container);\r\n"
                 }
             ],
             "date": 1684874071512,

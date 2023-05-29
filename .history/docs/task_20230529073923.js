@@ -46,25 +46,3 @@ $("#taskForms").on("click", ".prependSubtask", function () {
 $("#taskForms").on("click", ".deleteMe", function () {
   $(this).closest("li").remove();
 });
-
-$("form").submit(function(event) {
-  event.preventDefault();
-
-  var taskName =$("#taskName").val();
-  var taskDescription = $("#taskDescription").val();
-  var taskCompleteDate = $("#taskCompleteDate").val();
-  var taskCompleteTime = $("#taskCompleteDate").val();
-
-  var container = $("<div>").addClass("container mt-3");
-
-  var taskNameText = $("<h4>").text("Task Name: " + taskName).addClass("task-name");
-  var taskDescriptionText = $("<p>").text("Description: " + taskDescription).addClass("task-description");
-  var completeDateText = $("<p>").text("Complete By Date: " + taskCompleteDate).addClass("complete-date");
-  var completeTimeText = $("<p>").text("Complete By Time: " + taskCompleteTime).addClass("complete-time");
-
-  container.append(taskNameText, taskDescriptionText, completeDateText, completeTimeText);
-
-  $("#mainContent").append(container);
-
-  $(this)[0].reset();
-});

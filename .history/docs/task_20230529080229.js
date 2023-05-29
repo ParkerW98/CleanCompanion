@@ -57,10 +57,10 @@ $("form").submit(function(event) {
 
   var container = $("<div>").addClass("container mt-3");
 
-  var taskNameText = $("<h4>").text("Task Name: " + taskName).addClass("task-name");
-  var taskDescriptionText = $("<p>").text("Description: " + taskDescription).addClass("task-description");
-  var completeDateText = $("<p>").text("Complete By Date: " + taskCompleteDate).addClass("complete-date");
-  var completeTimeText = $("<p>").text("Complete By Time: " + taskCompleteTime).addClass("complete-time");
+  var taskNameText = $("<h4>").text("Task Name: " + taskName);
+  var taskDescriptionText = $("<p>").text("Description: " + taskDescription);
+  var completeDateText = $("<p>").text("Complete By Date: " + taskCompleteDate);
+  var completeTimeText = $("<p>").text("Complete By Time: " + taskCompleteTime);
 
   container.append(taskNameText, taskDescriptionText, completeDateText, completeTimeText);
 

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1684800529656,
@@ -32,6 +32,10 @@
                 {
                     "date": 1684874913821,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,21 @@\n \r\n label {\r\n     color: #05386B;\r\n     font-weight: bolder;\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+ol {\r\n+    counter-reset: item;\r\n+    list-style: none;\r\n+    padding: 0;\r\n+  }\r\n+  li {\r\n+    display: flex;\r\n+  }\r\n+  li:before {\r\n+    content: counters(item, \".\") \" \";\r\n+    counter-increment: item;\r\n+    display: flex;\r\n+    align-items: end;\r\n+    padding-right: 8px;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685372875519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,18 @@\n     counter-increment: item;\r\n     display: flex;\r\n     align-items: end;\r\n     padding-right: 8px;\r\n+  }\r\n+\r\n+  .task-name {\r\n+    color: #05386B;\r\n+  }\r\n+  .task-description {\r\n+    color: #05386B;\r\n+  }\r\n+  .complete-date {\r\n+    color: #05386B;\r\n+  }\r\n+  .complete-time {\r\n+    color: #05386B;\r\n   }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1684800529656,
