@@ -14,8 +14,12 @@
 <!-- CSS Styling - Site Wide -->
     <link rel="stylesheet" type="text/css" href="siteStyle.css">
     <link rel="stylesheet" type="text/css" href="siteNavStyle.css">
-<!-- CSS Styling - Index -->
-    <link rel="stylesheet" type="text/css" href="indexStyle.css">
+<!-- CSS Styling - Task Page -->
+    <link rel="stylesheet" type="text/css" href="taskStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="task.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+    
 <!-- Site Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +31,7 @@
     crossorigin="anonymous">
     </script>
 <!-- Page title *Update on each page -->
-    <title>Clean Companion - Home Page </title>
+    <title>Clean Companion - Tasks Page </title>
 </head>
 <body class="d-flex flex-column min-vh-100">
 <header>
@@ -53,7 +57,7 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="task.html">Tasks</a>
+                        <a class="nav-link" href="tasks.html">Tasks</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Environment</a>
@@ -71,7 +75,48 @@
 </div>
 <!-- Main Content -->
 <main>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="TaskFormContainer">
+              <h3>Create a Task</h3>
+              <form>
+                <div class="form-group">
+                  <label for="taskName">Task Name</label>
+                  <input type="text" class="form-control" id="taskName" placeholder="Enter Task Name">
+                </div>
+                <div class="form-group">
+                  <label for="taskDescription">Task Description</label>
+                  <input type="text" class="form-control" id="taskDescription" placeholder="Enter Task Description">
+                </div>
+                <div class="form-group">
+                  <label for="taskCompleteDate">Complete By Date</label>
+                  <input type="date" class="form-control" id="taskCompleteDate" name="CompleteDate">
+                </div>
+                <div class="form-group">
+                  <label for="taskCompleteTime">Complete By Time</label>
+                  <input type="time" class="form-control" id="taskCompleteTime" name="CompleteTime">
+                </div>
+                <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="Submit" aria-label="Submit Button">
+                </div>
+                        <!--Testing-->
+                <ol id="taskForms">
+                    <button type="button" class="addTask">Add Task</button>
+                </ol>
+
+
+
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 </main>
+
 </body>
 <!-- Site Footer -->
 <footer class="mt-auto footer">

@@ -14,8 +14,9 @@
 <!-- CSS Styling - Site Wide -->
     <link rel="stylesheet" type="text/css" href="siteStyle.css">
     <link rel="stylesheet" type="text/css" href="siteNavStyle.css">
-<!-- CSS Styling - Index -->
-    <link rel="stylesheet" type="text/css" href="indexStyle.css">
+<!-- CSS Styling - Task Page -->
+    <link rel="stylesheet" type="text/css" href="tasksStyle.css">
+    <script src="tasks.js"></script>
 <!-- Site Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
     crossorigin="anonymous">
     </script>
 <!-- Page title *Update on each page -->
-    <title>Clean Companion - Home Page </title>
+    <title>Clean Companion - Tasks Page </title>
 </head>
 <body class="d-flex flex-column min-vh-100">
 <header>
@@ -53,7 +54,7 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="task.html">Tasks</a>
+                        <a class="nav-link" href="tasks.html">Tasks</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Environment</a>
