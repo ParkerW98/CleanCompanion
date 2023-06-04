@@ -11,7 +11,7 @@
     <meta name="title" content="Clean Companion" />
     <meta
       name="description"
-      content="A one stop, up keep companion to keep you on track and up to date on all your cleaning tasks."
+      content="A one-stop upkeep companion to keep you on track and up to date on all your cleaning tasks."
     />
     <meta name="keywords" content="Clean, Cleaning, Task Management, Tasks" />
     <!-- Bootstrap -->
@@ -29,6 +29,19 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .custom-btn-hue1 {
+        filter: hue-rotate(45deg); /* Adjust the angle to change the hue */
+      }
+
+      .custom-btn-hue2 {
+        filter: hue-rotate(135deg); /* Adjust the angle to change the hue */
+      }
+
+      .custom-btn-hue3 {
+        filter: hue-rotate(225deg); /* Adjust the angle to change the hue */
+      }
+    </style>
     <!-- Jquery -->
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
@@ -91,42 +104,21 @@
     </div>
     <!-- Main Content -->
     <main>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <h2>Create an Account</h2>
-            <form>
-              <div class="mb-3">
-                <label for="userName" class="form-label">User Name</label>
-                <input type="text" class="form-control" id="userName" />
-              </div>
-
-              <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" />
-              </div>
-              <div class="mb-3">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName" />
-              </div>
-              <div class="mb-3">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" />
-              </div>
-              <div class="mb-3">
-                <label for="zipCode" class="form-label">Zip Code</label>
-                <input type="text" class="form-control" id="zipCode" />
-              </div>
-
-              <div class="text-center">
-                <a href="user.html" class="btn btn-primary">Submit</a>
-                <a href="signIn.html" class="btn btn-primary">Sign-In</a>
-              </div>
-            </form>
+      <div class="row justify-content-Left">
+        <div class="col-md-6">
+          <div class="text-center">
+            <a href="createSpace.html" class="btn btn-primary custom-btn-hue1"
+              >Create a Space</a
+            >
+            <br /><br />
+            <a href="mySpaces.html" class="btn btn-primary custom-btn-hue2"
+              >My Spaces</a
+            >
+            <br /><br />
+            <a href="tasksPastDue.html" class="btn btn-primary custom-btn-hue3"
+              >Tasks Past Due</a
+            >
+            <br /><br />
           </div>
         </div>
       </div>
