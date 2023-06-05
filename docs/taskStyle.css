@@ -1,0 +1,39 @@
+h3 {
+    text-align: center;
+    color: #05386B;
+    font-weight: bolder;
+}
+
+label {
+    color: #05386B;
+    font-weight: bolder;
+}
+
+ol {
+    counter-reset: item;
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+  }
+  li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+    display: flex;
+    align-items: end;
+    padding-right: 8px;
+  }
+
+  .task-name {
+    color: #05386B;
+  }
+  .task-description {
+    color: #05386B;
+  }
+  .complete-date {
+    color: #05386B;
+  }
+  .complete-time {
+    color: #05386B;
+  }
