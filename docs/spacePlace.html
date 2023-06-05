@@ -11,7 +11,7 @@
     <meta name="title" content="Clean Companion" />
     <meta
       name="description"
-      content="A one-stop upkeep companion to keep you on track and up to date on all your cleaning tasks."
+      content="A one-stop upkeep companion to keep you on track and up to date on all your cleaning tasks. This cleaning space task tracker app helps you stay organized and manage your cleaning tasks efficiently. Sign in or sign up to get started!"
     />
     <meta name="keywords" content="Clean, Cleaning, Task Management, Tasks" />
     <!-- Bootstrap -->
@@ -29,25 +29,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <style>
-      .custom-btn-hue1 {
-        filter: hue-rotate(15deg); /* Adjust the angle to change the hue */
-      }
-
-      .custom-btn-hue2 {
-        filter: hue-rotate(20deg); /* Adjust the angle to change the hue */
-      }
-
-      .custom-btn-hue3 {
-        filter: hue-rotate(25deg); /* Adjust the angle to change the hue */
-      }
-      .custom-btn-hue1,
-      .custom-btn-hue2,
-      .custom-btn-hue3 {
-        font-size: 30px; /* Adjust the font size to make the buttons bigger */
-        padding: 12px 24px; /* Adjust the padding to increase the button size */
-      }
-    </style> -->
     <!-- Jquery -->
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
@@ -94,10 +75,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tasks</a>
+                <a class="nav-link" href="aboutUs.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Environment</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -108,44 +89,32 @@
     <div class="banner container-fluid">
       <img src="./assets/banner.png" alt="" class="img-fluid" />
     </div>
-    <!-- Main Content -->
-    <main>
-      <div class="row justify-content-Left">
-        <div class="col-md-6">
-          <h2>User Account</h2>
-          <h3>User Information</h3>
-          <p>Username: JohnDoe</p>
-          <p>Email: johndoe@example.com</p>
-          <p>Member Since: January 1, 2022</p>
+    <h1>Create a 2D Space</h1>
 
-          <h3>My Spaces</h3>
-          <ul>
-            <li>Space 1</li>
-            <li>Space 2</li>
-            <li>Space 3</li>
-          </ul>
+    <form>
+      <label for="shape">Shape:</label>
+      <select id="shape" name="shape" required>
+        <option value="rectangle">Rectangle</option>
+        <option value="square">Square</option>
+        <option value="circle">Circle</option>
+      </select>
+      <br />
+      <br />
+      <label for="width">Width:</label>
+      <input type="number" id="width" name="width" required />
+      <br />
+      <br />
+      <label for="height">Height:</label>
+      <input type="number" id="height" name="height" required />
 
-          <h3>Tasks Past Due</h3>
-          <ul>
-            <li>Task 1</li>
-            <li>Task 2</li>
-            <li>Task 3</li>
-          </ul>
-          <a href="space.html" class="btn btn-primary custom-btn-hue1"
-            >Create a Space</a
-          >
+      <br />
+      <br />
+      <h2>Create Tasks</h2>
 
-          <a href="mySpaces.html" class="btn btn-primary custom-btn-hue2"
-            >My Spaces</a
-          >
+      <label for="taskName">Task Name:</label>
+      <input type="text" id="taskName" name="taskName" required />
 
-          <a href="tasksPastDue.html" class="btn btn-primary custom-btn-hue3"
-            >Tasks Past Due</a
-          >
-        </div>
-      </div>
-    </main>
+      <input type="submit" value="Create Task" />
+    </form>
   </body>
-  <!-- Site Footer -->
-  <footer class="mt-auto footer"></footer>
 </html>

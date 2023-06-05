@@ -49,10 +49,14 @@ main {
 }
 .custom-btn-hue1,
 .custom-btn-hue2,
-.custom-btn-hue3 .custom-btn-hue4 {
+.custom-btn-hue3 {
   font-size: 15px; /* Adjust the font size to make the buttons bigger */
   padding: 12px 24px; /* Adjust the padding to increase the button size */
 }
 h2 {
-  color: black;
+  color: rgb(26, 3, 131);
+}
+
+form {
+  color: rgb(26, 3, 131);
 }

@@ -37,31 +37,6 @@
     ></script>
     <!-- Page title *Update on each page -->
     <title>Clean Companion - Home Page</title>
-    <script>
-      // Function to handle form submission
-      function handleFormSubmit(event) {
-        event.preventDefault(); // Prevent form submission
-        var fileInput = document.getElementById("image");
-        var file = fileInput.files[0];
-        var formData = new FormData();
-        formData.append("image", file);
-
-        // Send the form data to the server using AJAX or fetch
-        // Example using AJAX
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "upload.php"); // Replace 'upload.php' with your server-side upload endpoint
-        xhr.onload = function () {
-          if (xhr.status === 200) {
-            // Upload successful
-            alert("Image uploaded successfully!");
-          } else {
-            // Upload failed
-            alert("Error uploading image. Please try again.");
-          }
-        };
-        xhr.send(formData);
-      }
-    </script>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
@@ -114,44 +89,21 @@
     <div class="banner container-fluid">
       <img src="./assets/banner.png" alt="" class="img-fluid" />
     </div>
-    <!-- Main Content -->
-    <main>
-      <div class="row justify-content-Left">
-        <div class="col-md-6">
-          <h2>User Account</h2>
-          <section class="image-upload">
-            <div class="container">
-              <h1>Upload an Image</h1>
-              <form>
-                <div class="mb-3">
-                  <label for="image" class="form-label">Select an image:</label>
-                  <br />
-
-                  <input type="file" id="image" name="image" accept="image/*" />
-                </div>
-                <button type="submit" class="btn btn-primary">Upload</button>
-              </form>
-            </div>
-          </section>
-          <br />
-          <h3>Profile Information</h3>
-          <p>JohnDoe</p>
-          <p>johndoe@example.com</p>
-          <p>Member Since: January 1, 2022</p>
-
-          <a href="space.html" class="btn btn-primary custom-btn-hue2"
-            >My Spaces</a
-          >
-          
-
-          <a href="space.html" class="btn btn-primary custom-btn-hue2"
-            >Overdue Tasks</a>
-         
-
-          
-      </div>
-    </main>
+    <div class="container">
+      <h2>Welcome to Clean Companion</h2>
+      <h1>
+        Clean Companion is a cleaning company that provides a convenient and
+        easy-to-use daily tracker for your cleaning responsibilities. With our
+        one-stop upkeep companion, you can stay on track and up to date with all
+        your cleaning tasks, helping you stay organized and manage your cleaning
+        efficiently.
+      </h1>
+      <h1>
+        Sign in or sign up today to get started with our cleaning space task
+        tracker app and experience a hassle-free way of managing your cleaning
+        tasks. Keep your living or working space clean and tidy with Clean
+        Companion!
+      </h1>
+    </div>
   </body>
-  <!-- Site Footer -->
-  <footer class="mt-auto footer"></footer>
 </html>
