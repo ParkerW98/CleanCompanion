@@ -11,7 +11,7 @@
     <meta name="title" content="Clean Companion" />
     <meta
       name="description"
-      content="A one-stop upkeep companion to keep you on track and up to date on all your cleaning tasks. This cleaning space task tracker app helps you stay organized and manage your cleaning tasks efficiently. Sign in or sign up to get started!"
+      content="A one stop, up keep companion to keep you on track and up to date on all your cleaning tasks."
     />
     <meta name="keywords" content="Clean, Cleaning, Task Management, Tasks" />
     <!-- Bootstrap -->
@@ -75,10 +75,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="aboutUs.html">About Us</a>
+                <a class="nav-link" href="#">Tasks</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="#">Environment</a>
               </li>
             </ul>
           </div>
@@ -91,20 +91,51 @@
     </div>
     <!-- Main Content -->
     <main>
-      <h1>
-        A one-stop upkeep companion to keep you on track and up to date on all
-        your cleaning tasks. This cleaning space task tracker app helps you stay
-        organized and manage your cleaning tasks efficiently.
-      </h1>
-      <div>
-        <a href="signIn.html" class="btn btn-primary custom-btn-hue1"
-          >Sign-In</a
+      <div class="container">
+        
+          <div class="col-md-6">
+            <h1>Create a Space</h1>
+            <form>
+              <div class="mb-3">
+                <label for="spaceName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="userName" />
+              </div>
+              <a href="spacePlace.html" class="btn btn-primary custom-btn-hue2"
+          >Enter</a
         >
-
-        <a href="signUp.html" class="btn btn-primary custom-btn-hue2"
-          >Sign-Up</a
-        >
-      </div>
+        <br />
+        <br />
+        <div class="container">
+            <div class="button-list">
+              <button class="btn btn-primary custom-btn-hue1">
+                <h3>Living Room</h3>
+                <p>Description of Place 1</p>
+                <p>Last Visited: Date 1</p>
+              </button>
+              
+              <button class="btn btn-primary custom-btn-hue2">
+                <h3>Kitchen</h3>
+                <p>Description of Place 2</p>
+                <p>Last Visited: Date 2</p>
+              </button>
+              
+              <button class="btn btn-primary custom-btn-hue3">
+                <h3>Master Bedroom</h3>
+                <p>Description of Place 3</p>
+                <p>Last Visited: Date 3</p>
+              </button>
+              <br />
+              <br />
+              <div class="button-list">
+                <button class="btn btn-primary custom-btn-hue1">
+                  <h3>Guest Room</h3>
+                  <p>Description of Place 1</p>
+                  <p>Last Visited: Date 1</p>
+                </button>
+              <!-- Add more buttons as needed -->
+            </div>
+          </div>
+              
     </main>
   </body>
   <!-- Site Footer -->
