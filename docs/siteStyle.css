@@ -60,3 +60,13 @@ h2 {
 form {
   color: rgb(26, 3, 131);
 }
+.padded-form {
+  padding: 20px;
+}
+
+.padded-button {
+  padding: 10px 20px;
+}
+.margin-button {
+  margin: 10px;
+}
