@@ -91,21 +91,40 @@
     </div>
     <!-- Main Content -->
     <main>
-      <h1>
-        A one-stop upkeep companion to keep you on track and up to date on all
-        your cleaning tasks. This cleaning space task tracker app helps you stay
-        organized and manage your cleaning tasks efficiently.
-      </h1>
-      <div>
-        <a href="signIn.html" class="btn btn-primary custom-btn-hue1"
-          >Sign-In</a
+      <div class="container">
+        
+          <div class="col-md-6">
+            <h1>Create a Space</h1>
+            <form>
+              <div class="mb-3">
+                <label for="spaceName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="userName" />
+              </div>
+              <a href="spacePlace.html" class="btn btn-primary custom-btn-hue2"
+          >Create</a
         >
-
-        <a href="signUp.html" class="btn btn-primary custom-btn-hue2"
-          >Sign-Up</a
-        >
-      </div>
-    </main>
+        <br />
+        <br />
+        <h2>Current Spaces</h2>
+        <div class="container">
+            <div class="button-list">
+              <a href="livingRoom.html" class="custom-link custom-link-hue1">
+                <h3>Living Room</h3>
+              </a>
+              <a href="kitchen.html" class="custom-link custom-link-hue2">
+                <h3>Kitchen</h3>
+              </a>
+              <a href="masterBedroom" class="custom-link custom-link-hue3">
+                <h3>Master Bedroom</h3>
+              </a>
+              
+              <a href="guestRoom" class="custom-link custom-link-hue1">
+                <h3>Guest Room</h3>
+              </a>
+              <!-- Add more links as needed -->
+            </div>
+          </div>
+          </main>
   </body>
   <!-- Site Footer -->
   <footer class="mt-auto footer"></footer>

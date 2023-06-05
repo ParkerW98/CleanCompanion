@@ -11,7 +11,7 @@
     <meta name="title" content="Clean Companion" />
     <meta
       name="description"
-      content="A one-stop upkeep companion to keep you on track and up to date on all your cleaning tasks. This cleaning space task tracker app helps you stay organized and manage your cleaning tasks efficiently. Sign in or sign up to get started!"
+      content="A one stop, up keep companion to keep you on track and up to date on all your cleaning tasks."
     />
     <meta name="keywords" content="Clean, Cleaning, Task Management, Tasks" />
     <!-- Bootstrap -->
@@ -75,10 +75,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="aboutUs.html">About Us</a>
+                <a class="nav-link" href="#">Tasks</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="#">Environment</a>
               </li>
             </ul>
           </div>
@@ -91,19 +91,44 @@
     </div>
     <!-- Main Content -->
     <main>
-      <h1>
-        A one-stop upkeep companion to keep you on track and up to date on all
-        your cleaning tasks. This cleaning space task tracker app helps you stay
-        organized and manage your cleaning tasks efficiently.
-      </h1>
-      <div>
-        <a href="signIn.html" class="btn btn-primary custom-btn-hue1"
-          >Sign-In</a
-        >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h2>Create an Account</h2>
+            <form>
+              <div class="mb-3">
+                <label for="userName" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="userName" />
+              </div>
 
-        <a href="signUp.html" class="btn btn-primary custom-btn-hue2"
-          >Sign-Up</a
-        >
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" />
+              </div>
+              <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" />
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="zipCode" class="form-label">Zip Code</label>
+                <input type="text" class="form-control" id="zipCode" />
+              </div>
+
+              <div class="text-center">
+                <a href="user.html" class="btn btn-primary">Submit</a>
+                <a href="signIn.html" class="btn btn-primary">Sign-In</a>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
   </body>

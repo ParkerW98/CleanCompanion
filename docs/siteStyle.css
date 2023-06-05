@@ -1,10 +1,72 @@
 /* Site Font */
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #EDF5E1;
+  font-family: "Poppins", sans-serif;
+  color: #edf5e1;
 }
 
 /* Banner Styling */
 .banner.container-fluid {
-    padding: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: left;
+  font-size: 25px; /* Adjust the size to your preference */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(26, 3, 131);
+  /* Change to your preferred font */
+  position: center;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    /* width: 500px; */
+    text-align: left;
+    font-size: 25px; /* Adjust the size to your preference */
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: rgb(26, 3, 131);
+    /* Change to your preferred font */
+    position: left;
+  }
+}
+main {
+  padding-left: 20px;
+}
+
+.custom-btn-hue1 {
+  filter: hue-rotate(15deg); /* Adjust the angle to change the hue */
+}
+
+.custom-btn-hue2 {
+  filter: hue-rotate(20deg); /* Adjust the angle to change the hue */
+}
+
+.custom-btn-hue3 {
+  filter: hue-rotate(25deg); /* Adjust the angle to change the hue */
+}
+.custom-btn-hue4 {
+  filter: hue-rotate(30deg); /* Adjust the angle to change the hue */
+}
+.custom-btn-hue1,
+.custom-btn-hue2,
+.custom-btn-hue3 {
+  font-size: 15px; /* Adjust the font size to make the buttons bigger */
+  padding: 12px 24px; /* Adjust the padding to increase the button size */
+}
+h2 {
+  color: rgb(26, 3, 131);
+}
+
+form {
+  color: rgb(26, 3, 131);
+}
+.padded-form {
+  padding: 20px;
+}
+
+.padded-button {
+  padding: 10px 20px;
+}
+.margin-button {
+  margin: 10px;
 }
